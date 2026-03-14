@@ -1,0 +1,16 @@
+name: Swagger
+description: An open-source framework for designing, building, documenting, and consuming
+  RESTful web services. Swagger provides a specification (OpenAPI) and tools for API
+  development including interactive documentation, code generation, and API testing
+  capabilities.
+url: https://swagger.io/
+tags:
+- API
+- Documentation
+- OpenAPI
+- REST
+- Development Tools
+created: '2025'
+modified: '2025'
+apis: []
+common: []
