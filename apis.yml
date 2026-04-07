@@ -9,8 +9,8 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Documentation
   - API Design
+  - Documentation
   - OpenAPI
   - REST
 url: >-
@@ -28,8 +28,8 @@ apis:
     humanURL: https://swagger.io/tools/swagger-ui/
     tags:
       - Documentation
-      - OpenAPI
       - Interactive Docs
+      - OpenAPI
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/
@@ -45,8 +45,8 @@ apis:
     humanURL: https://swagger.io/tools/swagger-editor/
     tags:
       - API Design
-      - OpenAPI
       - Editor
+      - OpenAPI
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-editor/
@@ -60,8 +60,8 @@ apis:
     humanURL: https://swagger.io/tools/swagger-codegen/
     tags:
       - Code Generation
-      - SDK
       - OpenAPI
+      - SDK
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-codegen/
