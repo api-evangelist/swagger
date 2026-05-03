@@ -1,0 +1,183 @@
+vocabulary:
+  name: Swagger and OpenAPI Vocabulary
+  description: >-
+    Vocabulary for the Swagger framework and OpenAPI Specification. Covers
+    specification structure, tool ecosystem, versioning history, core concepts,
+    and design patterns defined in the OpenAPI standard.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  tags:
+    - API Design
+    - Documentation
+    - OpenAPI
+    - Standard
+
+  terms:
+
+    - term: Swagger
+      definition: >-
+        Originally the name of both the specification (Swagger 1.0, 2.0) and the
+        toolset for describing REST APIs. Since 2016, the Swagger specification
+        became the OpenAPI Specification. The "Swagger" name now refers specifically
+        to the SmartBear toolset (Swagger UI, Editor, Codegen) built on top of OAS.
+      tags:
+        - Core
+        - History
+
+    - term: OpenAPI Specification (OAS)
+      definition: >-
+        A language-agnostic, vendor-neutral standard for describing HTTP APIs.
+        Created from the Swagger Specification in 2016 under the OpenAPI Initiative.
+        The latest versions are OAS 3.1.1 (stable) and OAS 3.2.0 (September 2025).
+      tags:
+        - Core
+        - Standard
+
+    - term: OpenAPI Initiative (OAI)
+      definition: >-
+        An open governance structure under the Linux Foundation responsible for
+        the OpenAPI Specification. Members include SmartBear, Google, IBM, Microsoft,
+        PayPal, Postman, and others. Created in 2015.
+      tags:
+        - Governance
+        - Standard
+
+    - term: Swagger UI
+      definition: >-
+        An open-source web-based UI that renders an OpenAPI specification as
+        interactive documentation. Developers can read the API docs and send test
+        requests directly from the browser.
+      tags:
+        - Tooling
+        - Documentation
+
+    - term: Swagger Editor
+      definition: >-
+        An open-source, browser-based editor for creating and validating OpenAPI
+        and AsyncAPI specifications with real-time previews and inline validation.
+      tags:
+        - Tooling
+        - API Design
+
+    - term: Swagger Codegen
+      definition: >-
+        An open-source template-driven tool that generates client SDKs, server
+        stubs, and documentation from OpenAPI specifications in 40+ languages.
+      tags:
+        - Tooling
+        - Code Generation
+
+    - term: Paths Object
+      definition: >-
+        An OpenAPI object holding all defined resource paths and their operations.
+        Each key is a URL template (e.g., /pets/{petId}) and maps to a Path Item
+        Object containing the HTTP operations for that path.
+      tags:
+        - Specification
+        - Structure
+
+    - term: Operation Object
+      definition: >-
+        The core building block of an OpenAPI spec describing a single HTTP operation
+        (GET, POST, PUT, DELETE, etc.) on a path. Contains operationId, summary,
+        description, parameters, requestBody, responses, and security.
+      tags:
+        - Specification
+        - Structure
+
+    - term: operationId
+      definition: >-
+        A unique string identifier for an operation within an OpenAPI spec. Used
+        by code generators (Swagger Codegen, OpenAPI Generator) to name generated
+        functions/methods. Must be unique across the entire API document.
+      tags:
+        - Specification
+        - Code Generation
+
+    - term: Components Object
+      definition: >-
+        The OpenAPI 3.x container for reusable objects: schemas, responses,
+        parameters, examples, requestBodies, headers, securitySchemes, links,
+        and callbacks. Objects here are referenced via $ref.
+      tags:
+        - Specification
+        - Structure
+
+    - term: Schema Object
+      definition: >-
+        An OpenAPI definition of a data model, based on JSON Schema. Used in
+        request bodies, response content, and parameters. In OAS 3.1, schemas
+        are fully JSON Schema Draft 2020-12 compatible.
+      tags:
+        - Specification
+        - Data Modeling
+
+    - term: $ref
+      definition: >-
+        A JSON Reference ($ref) that allows an OpenAPI document to reference
+        another object within the same document or an external document.
+        Used extensively in the components section for DRY definitions.
+      tags:
+        - Specification
+        - Structure
+
+    - term: Security Scheme
+      definition: >-
+        An OpenAPI definition of an authentication/authorization mechanism. Types
+        include apiKey, http (basic, bearer), oauth2, and openIdConnect.
+      tags:
+        - Security
+        - Specification
+
+    - term: Parameter Object
+      definition: >-
+        An OpenAPI definition of an operation input. Parameters can be in: path,
+        query, header, or cookie. Path parameters are always required.
+      tags:
+        - Specification
+        - Structure
+
+    - term: RequestBody Object
+      definition: >-
+        Introduced in OpenAPI 3.0 to replace Swagger 2.0's body parameters.
+        Describes the request body including media type, schema, and whether
+        the body is required.
+      tags:
+        - Specification
+        - Structure
+
+    - term: Webhook
+      definition: >-
+        An asynchronous callback mechanism introduced in OpenAPI 3.1. Webhooks
+        allow an API to describe events it sends to registered subscriber URLs.
+        Defined in the root webhooks object of the spec.
+      tags:
+        - Specification
+        - Async
+
+    - term: Swagger 2.0
+      definition: >-
+        The last version of the specification published under the Swagger name
+        before being renamed OpenAPI in 2016. Still widely used and supported
+        by the Swagger toolchain as OpenAPI 2.0.
+      tags:
+        - History
+        - Versioning
+
+    - term: JSON Reference
+      definition: >-
+        A JSON pointer syntax used in OpenAPI to reference and reuse objects
+        within the same document (#/components/schemas/Pet) or across documents
+        (./models.yaml#/components/schemas/Pet).
+      tags:
+        - Specification
+        - Structure
+
+    - term: Petstore
+      definition: >-
+        The canonical sample API used throughout Swagger and OpenAPI documentation.
+        The Petstore demonstrates API design patterns and is the default example
+        in Swagger UI and the Swagger Editor. Available at petstore3.swagger.io.
+      tags:
+        - Examples
+        - Reference

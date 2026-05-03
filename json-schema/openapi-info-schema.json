@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/swagger/json-schema/openapi-info-schema.json",
+  "title": "OpenAPI Info Object",
+  "description": "Schema for the OpenAPI Specification Info Object, which provides metadata about the API.",
+  "type": "object",
+  "required": ["title", "version"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the API."
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short summary of the API (OAS 3.1+)."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the API. CommonMark markdown is supported."
+    },
+    "termsOfService": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the Terms of Service for the API."
+    },
+    "contact": {
+      "$ref": "#/$defs/Contact"
+    },
+    "license": {
+      "$ref": "#/$defs/License"
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the OpenAPI document (not the specification version)."
+    }
+  },
+  "$defs": {
+    "Contact": {
+      "type": "object",
+      "description": "Contact information for the exposed API.",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "email": { "type": "string", "format": "email" }
+      }
+    },
+    "License": {
+      "type": "object",
+      "description": "License information for the exposed API.",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "identifier": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

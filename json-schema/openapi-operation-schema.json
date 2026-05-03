@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/swagger/json-schema/openapi-operation-schema.json",
+  "title": "OpenAPI Operation Object",
+  "description": "Schema for an OpenAPI Operation Object describing a single API operation on a path.",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of tags for organizing operations in API documentation."
+    },
+    "summary": {
+      "type": "string",
+      "description": "A short summary of what the operation does. Should use Title Case."
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the operation. CommonMark markdown supported."
+    },
+    "externalDocs": {
+      "type": "object",
+      "description": "Additional external documentation for this operation."
+    },
+    "operationId": {
+      "type": "string",
+      "description": "Unique identifier for the operation, used for code generation."
+    },
+    "parameters": {
+      "type": "array",
+      "description": "List of parameters applicable to this operation.",
+      "items": {
+        "$ref": "#/$defs/Parameter"
+      }
+    },
+    "requestBody": {
+      "$ref": "#/$defs/RequestBody"
+    },
+    "responses": {
+      "type": "object",
+      "description": "Map of HTTP status codes to response objects.",
+      "additionalProperties": {
+        "$ref": "#/$defs/Response"
+      }
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Marks the operation as deprecated."
+    },
+    "security": {
+      "type": "array",
+      "description": "Security requirements for this operation (overrides global security)."
+    }
+  },
+  "required": ["responses"],
+  "$defs": {
+    "Parameter": {
+      "type": "object",
+      "description": "An OpenAPI parameter definition.",
+      "required": ["name", "in"],
+      "properties": {
+        "name": { "type": "string" },
+        "in": {
+          "type": "string",
+          "enum": ["query", "header", "path", "cookie"]
+        },
+        "description": { "type": "string" },
+        "required": { "type": "boolean" },
+        "deprecated": { "type": "boolean" },
+        "schema": { "type": "object" }
+      }
+    },
+    "RequestBody": {
+      "type": "object",
+      "description": "The request body of an operation.",
+      "required": ["content"],
+      "properties": {
+        "description": { "type": "string" },
+        "content": {
+          "type": "object",
+          "description": "Map of media types to media type objects."
+        },
+        "required": { "type": "boolean", "default": false }
+      }
+    },
+    "Response": {
+      "type": "object",
+      "description": "A response object for a specific HTTP status code.",
+      "required": ["description"],
+      "properties": {
+        "description": { "type": "string" },
+        "headers": { "type": "object" },
+        "content": { "type": "object" },
+        "links": { "type": "object" }
+      }
+    }
+  }
+}

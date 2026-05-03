@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "swagger": "https://api-evangelist.github.io/swagger/vocab#",
+    "oas": "https://spec.openapis.org/oas/v3.1.0#",
+
+    "OpenApiSpecification": {
+      "@id": "swagger:OpenApiSpecification",
+      "@type": "@id"
+    },
+    "ApiOperation": {
+      "@id": "swagger:ApiOperation",
+      "@type": "@id"
+    },
+    "ApiPath": {
+      "@id": "swagger:ApiPath",
+      "@type": "@id"
+    },
+    "ApiSchema": {
+      "@id": "swagger:ApiSchema",
+      "@type": "@id"
+    },
+    "SecurityScheme": {
+      "@id": "swagger:SecurityScheme",
+      "@type": "@id"
+    },
+    "SwaggerUi": {
+      "@id": "swagger:SwaggerUi",
+      "@type": "@id"
+    },
+    "SwaggerEditor": {
+      "@id": "swagger:SwaggerEditor",
+      "@type": "@id"
+    },
+    "SwaggerCodegen": {
+      "@id": "swagger:SwaggerCodegen",
+      "@type": "@id"
+    },
+
+    "name": { "@id": "schema:name" },
+    "description": { "@id": "schema:description" },
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "version": { "@id": "schema:version" },
+    "softwareVersion": { "@id": "schema:softwareVersion" },
+    "license": { "@id": "schema:license", "@type": "@id" },
+    "codeRepository": { "@id": "schema:codeRepository", "@type": "@id" },
+    "programmingLanguage": { "@id": "schema:programmingLanguage" },
+    "featureList": { "@id": "schema:featureList" },
+
+    "specVersion": { "@id": "swagger:specVersion" },
+    "operationId": { "@id": "swagger:operationId" },
+    "httpMethod": { "@id": "swagger:httpMethod" },
+    "pathTemplate": { "@id": "swagger:pathTemplate" },
+    "securityType": { "@id": "swagger:securityType" },
+    "requestBodyRequired": { "@id": "swagger:requestBodyRequired" },
+    "deprecated": { "@id": "swagger:deprecated" },
+    "tags": { "@id": "swagger:tags", "@container": "@list" }
+  }
+}

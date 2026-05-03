@@ -1,0 +1,86 @@
+extends: spectral:oas
+rules:
+
+  swagger-oas-operations-have-tags:
+    description: All OpenAPI operations must have at least one tag for organization
+    severity: warn
+    given: "$.paths[*][get,put,post,delete,patch,options,head,trace]"
+    then:
+      field: tags
+      function: truthy
+
+  swagger-oas-operations-have-summaries:
+    description: All OpenAPI operations must have a summary in Title Case
+    severity: error
+    given: "$.paths[*][get,put,post,delete,patch,options,head,trace]"
+    then:
+      field: summary
+      function: truthy
+
+  swagger-oas-summaries-title-case:
+    description: OpenAPI operation summaries should use Title Case
+    severity: warn
+    given: "$.paths[*][get,put,post,delete,patch,options,head,trace].summary"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[A-Z][a-zA-Z0-9]*([ ][A-Z][a-zA-Z0-9]*)*$"
+
+  swagger-oas-operations-have-operation-ids:
+    description: All OpenAPI operations must have an operationId for code generation
+    severity: error
+    given: "$.paths[*][get,put,post,delete,patch,options,head,trace]"
+    then:
+      field: operationId
+      function: truthy
+
+  swagger-oas-operations-have-descriptions:
+    description: All OpenAPI operations should have a description
+    severity: warn
+    given: "$.paths[*][get,put,post,delete,patch,options,head,trace]"
+    then:
+      field: description
+      function: truthy
+
+  swagger-oas-path-params-required:
+    description: All path parameters must be marked as required
+    severity: error
+    given: "$.paths[*][*].parameters[?(@.in == 'path')]"
+    then:
+      field: required
+      function: truthy
+
+  swagger-oas-schemas-have-descriptions:
+    description: All component schemas must have a description
+    severity: warn
+    given: "$.components.schemas[*]"
+    then:
+      field: description
+      function: truthy
+
+  swagger-oas-info-required-fields:
+    description: API info object must have title, description, and version
+    severity: error
+    given: "$.info"
+    then:
+      - field: title
+        function: truthy
+      - field: version
+        function: truthy
+
+  swagger-oas-responses-have-descriptions:
+    description: All response objects must have a description
+    severity: warn
+    given: "$.paths[*][*].responses[*]"
+    then:
+      field: description
+      function: truthy
+
+  swagger-oas-paths-kebab-case:
+    description: API paths should use kebab-case (lowercase with hyphens, no underscores)
+    severity: warn
+    given: "$.paths[*]~"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^(/[a-z0-9-{}]*)*$"

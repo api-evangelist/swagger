@@ -1,0 +1,78 @@
+{
+  "name": "OpenAPI Specification Structure",
+  "description": "The top-level structural layout of an OpenAPI 3.x Specification document.",
+  "created": "2026-05-02",
+  "modified": "2026-05-02",
+  "structure": {
+    "root": {
+      "type": "object",
+      "description": "The root OpenAPI Object",
+      "fields": [
+        { "name": "openapi", "type": "string", "required": true, "description": "OpenAPI version string (e.g., 3.1.1)" },
+        {
+          "name": "info",
+          "type": "object (Info Object)",
+          "required": true,
+          "fields": [
+            { "name": "title", "type": "string", "required": true },
+            { "name": "version", "type": "string", "required": true },
+            { "name": "description", "type": "string", "required": false },
+            { "name": "summary", "type": "string", "required": false },
+            { "name": "termsOfService", "type": "string (uri)", "required": false },
+            { "name": "contact", "type": "object (Contact Object)", "required": false },
+            { "name": "license", "type": "object (License Object)", "required": false }
+          ]
+        },
+        {
+          "name": "servers",
+          "type": "array of Server Objects",
+          "required": false,
+          "description": "Server connectivity information"
+        },
+        {
+          "name": "paths",
+          "type": "object (Paths Object)",
+          "required": false,
+          "description": "Map of path templates to Path Item Objects"
+        },
+        {
+          "name": "webhooks",
+          "type": "object",
+          "required": false,
+          "description": "Incoming webhooks the API may send (OAS 3.1+)"
+        },
+        {
+          "name": "components",
+          "type": "object (Components Object)",
+          "required": false,
+          "fields": [
+            { "name": "schemas", "type": "map of Schema Objects", "required": false },
+            { "name": "responses", "type": "map of Response Objects", "required": false },
+            { "name": "parameters", "type": "map of Parameter Objects", "required": false },
+            { "name": "examples", "type": "map of Example Objects", "required": false },
+            { "name": "requestBodies", "type": "map of Request Body Objects", "required": false },
+            { "name": "headers", "type": "map of Header Objects", "required": false },
+            { "name": "securitySchemes", "type": "map of Security Scheme Objects", "required": false },
+            { "name": "links", "type": "map of Link Objects", "required": false },
+            { "name": "callbacks", "type": "map of Callback Objects", "required": false }
+          ]
+        },
+        {
+          "name": "security",
+          "type": "array of Security Requirement Objects",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "type": "array of Tag Objects",
+          "required": false
+        },
+        {
+          "name": "externalDocs",
+          "type": "object (External Documentation Object)",
+          "required": false
+        }
+      ]
+    }
+  }
+}
