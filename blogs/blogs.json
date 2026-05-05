@@ -1,0 +1,13 @@
+{
+  "repo": "swagger",
+  "feeds": [
+    {
+      "source": "https://swagger.io/blog/",
+      "feed_url": "https://swagger.io/blog/?rss=all",
+      "saved": 10,
+      "title": "Swagger Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:37:17Z"
+}
