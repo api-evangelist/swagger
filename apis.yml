@@ -40,9 +40,9 @@ apis:
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/swagger-api/swagger-ui
       - type: Docker
         url: https://hub.docker.com/r/swaggerapi/swagger-ui
@@ -64,7 +64,7 @@ apis:
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-editor/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/swagger-api/swagger-editor
       - type: Live Demo
         url: https://editor.swagger.io/
@@ -84,7 +84,7 @@ apis:
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-codegen/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/swagger-api/swagger-codegen
       - type: Docker
         url: https://hub.docker.com/r/swaggerapi/swagger-codegen-cli-v3
@@ -104,7 +104,7 @@ apis:
       - Parser
       - Tooling
     properties:
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/swagger-api/swagger-parser
       - type: npm
         url: https://www.npmjs.com/package/swagger-parser
@@ -124,7 +124,7 @@ apis:
     properties:
       - type: Specification
         url: https://swagger.io/specification/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/OAI/OpenAPI-Specification
       - type: OpenAPI 3.2
         url: https://spec.openapis.org/oas/v3.2.0.html
@@ -138,7 +138,7 @@ common:
     url: https://swagger.io
   - type: Documentation
     url: https://swagger.io/docs/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/swagger-api
   - type: Blog
     url: https://swagger.io/blog/
