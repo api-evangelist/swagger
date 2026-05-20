@@ -134,6 +134,8 @@ apis:
         url: https://swagger.io/specification/v2/
 
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/swagger
   - type: Website
     url: https://swagger.io
   - type: Documentation
