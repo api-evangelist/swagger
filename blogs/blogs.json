@@ -3,12 +3,11 @@
   "feeds": [
     {
       "source": "https://swagger.io/blog/",
-      "feed_url": "",
-      "title": "",
-      "saved": 0,
-      "error": "no_feed"
+      "feed_url": "https://swagger.io/blog/?rss=all",
+      "title": "Swagger Blog",
+      "saved": 0
     }
   ],
   "post_count": 10,
-  "fetched": "2026-05-09T20:17:51Z"
+  "fetched": "2026-05-17T20:48:52Z"
 }
