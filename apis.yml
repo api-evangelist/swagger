@@ -9,7 +9,7 @@ description: >-
   Swagger Codegen for generating client SDKs and server stubs. The latest OpenAPI
   standard version is 3.2.0 (released September 2025).
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - API Design
   - Documentation
