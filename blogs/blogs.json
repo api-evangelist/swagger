@@ -3,19 +3,17 @@
   "feeds": [
     {
       "source": "https://swagger.io/blog/",
-      "feed_url": "https://swagger.io/blog/",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "feed_url": "",
+      "saved": 1,
+      "method": "agent-scrape"
     },
     {
       "source": "https://github.com/swagger-api",
-      "feed_url": "https://github.com/swagger-api",
-      "title": "",
       "saved": 0,
-      "method": "none"
+      "error": "not a blog feed"
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 11,
+  "fetched": "2026-06-27T13:17:15Z",
+  "agent_pulled": "2026-06-27"
 }
