@@ -2,18 +2,14 @@
   "repo": "swagger",
   "feeds": [
     {
-      "source": "https://swagger.io/blog/",
-      "feed_url": "",
-      "saved": 1,
-      "method": "agent-scrape"
-    },
-    {
       "source": "https://github.com/swagger-api",
+      "feed_url": "https://github.com/swagger-api",
+      "title": "",
       "saved": 0,
-      "error": "not a blog feed"
+      "method": "none"
     }
   ],
   "post_count": 11,
-  "fetched": "2026-06-27T13:17:15Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "agent_pulled": "2026-06-27"
 }
