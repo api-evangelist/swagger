@@ -146,6 +146,9 @@ apis:
         url: https://swagger.io/specification/v2/
 
 common:
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/swagger-api/swagger-ui/blob/main/LICENSE
   - type: DomainSecurity
     url: security/swagger-domain-security.yml
   - type: LinkedIn
