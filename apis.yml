@@ -25,6 +25,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swagger.pn
 tags:
   - API Design
   - Documentation
+  - Open-Source
+  - OpenAPI
+  - REST
+  - Standard
+  - Swagger
+tags_raw:
+  - API Design
+  - Documentation
   - Open Source
   - OpenAPI
   - REST
@@ -44,6 +52,12 @@ apis:
       OpenAPI 2.0, 3.0, or 3.1 specification.
     humanURL: https://swagger.io/tools/swagger-ui/
     tags:
+      - Documentation
+      - Interactive Docs
+      - Open-Source
+      - OpenAPI
+      - UI
+    tags_raw:
       - Documentation
       - Interactive Docs
       - Open Source
@@ -71,6 +85,11 @@ apis:
     tags:
       - API Design
       - Editor
+      - Open-Source
+      - OpenAPI
+    tags_raw:
+      - API Design
+      - Editor
       - Open Source
       - OpenAPI
     properties:
@@ -89,6 +108,11 @@ apis:
       JavaScript, Go, Ruby, C#, Swift, and TypeScript.
     humanURL: https://swagger.io/tools/swagger-codegen/
     tags:
+      - Code Generation
+      - Open-Source
+      - OpenAPI
+      - SDK
+    tags_raw:
       - Code Generation
       - Open Source
       - OpenAPI
