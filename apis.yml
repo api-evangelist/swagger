@@ -9,6 +9,18 @@ description: >-
   Swagger Codegen for generating client SDKs and server stubs. The latest OpenAPI
   standard version is 3.2.0 (released September 2025).
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: Apache-2.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -170,6 +182,14 @@ apis:
         url: https://swagger.io/specification/v2/
 
 common:
+  - type: IssueTracker
+    url: https://github.com/swagger-api/swagger-ui/issues
+  - type: Releases
+    url: https://github.com/swagger-api/swagger-ui/releases
+  - type: SecurityPolicy
+    url: https://github.com/swagger-api/swagger-ui/blob/main/SECURITY.md
+  - type: ContributionGuide
+    url: https://github.com/swagger-api/.github/blob/master/CONTRIBUTING.md
   - type: License
     name: Apache-2.0
     url: https://github.com/swagger-api/swagger-ui/blob/main/LICENSE
