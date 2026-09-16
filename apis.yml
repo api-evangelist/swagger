@@ -36,7 +36,6 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swagger.png
 tags:
   - API Design
-  - Developer Tools
   - Documentation
   - Open-Source
   - OpenAPI
