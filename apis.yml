@@ -223,3 +223,6 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-parent: smartbear
+x-relationship: acquisition
+x-acquired: 2015
