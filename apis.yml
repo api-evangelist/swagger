@@ -186,6 +186,8 @@ apis:
         url: https://swagger.io/specification/v2/
 
 common:
+  - type: VendorFacets
+    url: vendor-facets/swagger-vendor-facets.yml
   - type: IssueTracker
     url: https://github.com/swagger-api/swagger-ui/issues
   - type: Releases
