@@ -37,7 +37,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swagger.pn
 tags:
   - API Design
   - Documentation
-  - Open-Source
+  - Open Source
   - OpenAPI
   - REST
   - Standards
@@ -50,6 +50,7 @@ tags_raw:
   - REST
   - Standard
   - Swagger
+  - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/swagger/refs/heads/main/apis.yml
 created: '2025-01-01'
 modified: '2026-05-02'
@@ -66,7 +67,7 @@ apis:
     tags:
       - Documentation
       - Interactive Docs
-      - Open-Source
+      - Open Source
       - OpenAPI
       - UI
     tags_raw:
@@ -75,6 +76,7 @@ apis:
       - Open Source
       - OpenAPI
       - UI
+      - Open-Source
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/
@@ -97,13 +99,14 @@ apis:
     tags:
       - API Design
       - Editor
-      - Open-Source
+      - Open Source
       - OpenAPI
     tags_raw:
       - API Design
       - Editor
       - Open Source
       - OpenAPI
+      - Open-Source
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-editor/
@@ -121,7 +124,7 @@ apis:
     humanURL: https://swagger.io/tools/swagger-codegen/
     tags:
       - Code Generation
-      - Open-Source
+      - Open Source
       - OpenAPI
       - SDK
     tags_raw:
@@ -129,6 +132,7 @@ apis:
       - Open Source
       - OpenAPI
       - SDK
+      - Open-Source
     properties:
       - type: Documentation
         url: https://swagger.io/docs/open-source-tools/swagger-codegen/
@@ -228,3 +232,4 @@ maintainers:
 x-parent: smartbear
 x-relationship: acquisition
 x-acquired: 2015
+kind: topic
