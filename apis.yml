@@ -190,6 +190,12 @@ apis:
         url: https://swagger.io/specification/v2/
 
 common:
+  - type: Plans
+    url: plans/swagger-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/swagger-rate-limits.yml
+  - type: FinOps
+    url: finops/swagger-finops.yml
   - type: VendorFacets
     url: vendor-facets/swagger-vendor-facets.yml
   - type: IssueTracker
